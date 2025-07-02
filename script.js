@@ -129,12 +129,8 @@ function loadFallbackData() {
                 type: "Internship",
                 duration: "2024",
                 description: "Developed robust backend systems and APIs using modern technologies. Worked on database design, server-side logic, and API integrations to support web applications.",
-                technologies: ["Nest.js", "PostgreSQL", "TypeScript"],
-                achievements: [
-                    "Built scalable REST APIs using Nest.js framework",
-                    "Designed and optimized PostgreSQL database schemas",
-                    "Implemented authentication and authorization systems"
-                ]
+                technologies: ["Nest.js", "PostgreSQL", "TypeScript"]
+                
             },
             {
                 company: "Nexon Logistics",
@@ -142,12 +138,8 @@ function loadFallbackData() {
                 type: "Internship",
                 duration: "2024",
                 description: "Created responsive and interactive user interfaces for logistics management systems. Focused on user experience and real-time data visualization.",
-                technologies: ["HTML5", "CSS3", "JavaScript", "Firebase"],
-                achievements: [
-                    "Developed responsive web interfaces for logistics tracking",
-                    "Integrated Firebase for real-time data synchronization",
-                    "Optimized frontend performance and user experience"
-                ]
+                technologies: ["HTML5", "CSS3", "JavaScript", "Firebase"]
+                
             },
             {
                 company: "SIES Graduate School of Technology",
@@ -156,11 +148,7 @@ function loadFallbackData() {
                 duration: "2023 - Present",
                 description: "Lead developer for the college portal system serving thousands of students and faculty. Built comprehensive academic management platform using MERN stack.",
                 technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-                achievements: [
-                    "Developed full-stack college portal from scratch",
-                    "Implemented student registration and course management",
-                    "Deployed and maintained production system"
-                ],
+                
                 link: "https://portal.siesgst.ac.in/"
             }
         ],
@@ -294,7 +282,7 @@ function populateExperience() {
             </div>
             ${linkHTML}
         `;
-        
+
         experienceGrid.appendChild(experienceCard);
     });
 }
