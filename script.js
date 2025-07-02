@@ -122,6 +122,48 @@ function loadFallbackData() {
             projects: "15+",
             technologies: "10+"
         },
+        experience: [
+            {
+                company: "MenuCards",
+                role: "Backend Developer",
+                type: "Internship",
+                duration: "2024",
+                description: "Developed robust backend systems and APIs using modern technologies. Worked on database design, server-side logic, and API integrations to support web applications.",
+                technologies: ["Nest.js", "PostgreSQL", "TypeScript"],
+                achievements: [
+                    "Built scalable REST APIs using Nest.js framework",
+                    "Designed and optimized PostgreSQL database schemas",
+                    "Implemented authentication and authorization systems"
+                ]
+            },
+            {
+                company: "Nexon Logistics",
+                role: "Frontend Developer",
+                type: "Internship",
+                duration: "2024",
+                description: "Created responsive and interactive user interfaces for logistics management systems. Focused on user experience and real-time data visualization.",
+                technologies: ["HTML5", "CSS3", "JavaScript", "Firebase"],
+                achievements: [
+                    "Developed responsive web interfaces for logistics tracking",
+                    "Integrated Firebase for real-time data synchronization",
+                    "Optimized frontend performance and user experience"
+                ]
+            },
+            {
+                company: "SIES Graduate School of Technology",
+                role: "Web Developer",
+                type: "Technical Team Member",
+                duration: "2023 - Present",
+                description: "Lead developer for the college portal system serving thousands of students and faculty. Built comprehensive academic management platform using MERN stack.",
+                technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+                achievements: [
+                    "Developed full-stack college portal from scratch",
+                    "Implemented student registration and course management",
+                    "Deployed and maintained production system"
+                ],
+                link: "https://portal.siesgst.ac.in/"
+            }
+        ],
         skills: [
             { name: "HTML5", icon: "fab fa-html5", level: "Expert" },
             { name: "CSS3", icon: "fab fa-css3-alt", level: "Expert" },
@@ -177,6 +219,9 @@ function populateContent() {
     document.getElementById('projects-completed').textContent = portfolioData.stats.projects;
     document.getElementById('technologies-used').textContent = portfolioData.stats.technologies;
     
+    // Experience section
+    populateExperience();
+    
     // Skills section
     populateSkills();
     
@@ -188,6 +233,73 @@ function populateContent() {
     
     // Social links
     populateSocialLinks();
+}
+
+function populateExperience() {
+    const experienceTimeline = document.getElementById('experience-timeline');
+    experienceTimeline.innerHTML = '';
+    
+    portfolioData.experience.forEach((exp, index) => {
+        const experienceItem = document.createElement('div');
+        experienceItem.className = 'experience-item';
+        experienceItem.setAttribute('data-aos', 'fade-up');
+        experienceItem.setAttribute('data-aos-delay', (index * 200).toString());
+        
+        const technologiesHTML = exp.technologies.map(tech => 
+            `<span class="experience-tech">${tech}</span>`
+        ).join('');
+        
+        const achievementsHTML = exp.achievements.map(achievement => 
+            `<li>${achievement}</li>`
+        ).join('');
+        
+        const linkHTML = exp.link ? 
+            `<a href="${exp.link}" class="experience-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                View Project
+            </a>` : '';
+        
+        experienceItem.innerHTML = `
+            <div class="experience-content">
+                <div class="experience-header">
+                    <h3 class="experience-company">${exp.company}</h3>
+                    <h4 class="experience-role">${exp.role}</h4>
+                    <div class="experience-type-duration">
+                        <span class="experience-type">${exp.type}</span>
+                        <span class="experience-duration">${exp.duration}</span>
+                    </div>
+                </div>
+                <p class="experience-description">${exp.description}</p>
+                <div class="experience-technologies">
+                    ${technologiesHTML}
+                </div>
+                <ul class="experience-achievements">
+                    ${achievementsHTML}
+                </ul>
+                ${linkHTML}
+            </div>
+            <div class="experience-dot"></div>
+        `;
+        
+        experienceTimeline.appendChild(experienceItem);
+    });
+    
+    // Add scroll animation for experience items
+    const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, observerOptions);
+    
+    const experienceItems = document.querySelectorAll('.experience-item');
+    experienceItems.forEach(item => observer.observe(item));
 }
 
 function populateSkills() {

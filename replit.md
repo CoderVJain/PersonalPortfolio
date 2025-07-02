@@ -37,12 +37,12 @@ This is a dynamic portfolio website for Varun Jain, a passionate web developer. 
 - **Progressive Enhancement**: Content loads after initial page setup
 
 ### 4. Content Sections
-- **Hero Section**: Dynamic name, title, and description from JSON
-- **About Section**: Personal information and bio
-- **Skills Section**: Dynamic skill cards with proficiency levels
-- **Experience Section**: Professional experience timeline
-- **Projects Section**: Portfolio projects with descriptions and links
-- **Contact Section**: Interactive contact form
+- **Hero Section**: Dynamic name, title, and description from JSON with particle animations
+- **About Section**: Personal information and bio with animated code snippet
+- **Experience Section**: Professional timeline with animated cards showing internships and work experience
+- **Skills Section**: Dynamic skill cards with hover animations and shimmer effects
+- **Projects Section**: Portfolio projects with 3D hover effects and light sweeps
+- **Contact Section**: Interactive contact form with glow effects
 
 ### 5. Animation System
 - **AOS Integration**: Scroll-triggered animations for visual appeal
