@@ -86,6 +86,9 @@ This is a dynamic portfolio website for Varun Jain, a passionate web developer. 
 ## Changelog
 
 - July 02, 2025. Initial setup
+- July 02, 2025. Added three main projects (Edusity, .sneakers E-commerce, Instagram Clone) with JSON-driven image support
+- July 02, 2025. Redesigned experience section from timeline to modern card grid layout
+- July 02, 2025. Removed Express server dependency, switched to static Python server for simplicity
 
 ## User Preferences
 

@@ -84,46 +84,25 @@
   ],
   "projects": [
     {
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with modern UI/UX, payment integration, user authentication, shopping cart functionality, and comprehensive admin dashboard for managing products and orders.",
-      "tags": ["React", "Node.js", "MongoDB", "Stripe"],
-      "github": "https://github.com/varunjain/ecommerce-platform",
-      "live": "https://ecommerce-demo.varunjain.dev"
+      "title": "Edusity",
+      "description": "Edusity is a university website showcasing key information about the institution, including its programs, campus photos, student testimonials, and contact details. The site offers a user-friendly experience for prospective students and visitors to explore and connect with the university.",
+      "tags": ["React", "HTML", "CSS"],
+      "github": "https://github.com/varunjain/edusity",
+      "live": "https://edusity-demo.vercel.app"
     },
     {
-      "title": "Task Management App",
-      "description": "A collaborative task management application with real-time updates, team collaboration features, project tracking, deadline management, and intuitive drag-and-drop interface.",
-      "tags": ["Vue.js", "Express", "Socket.io", "MySQL"],
-      "github": "https://github.com/varunjain/task-manager",
-      "live": "https://taskmanager.varunjain.dev"
+      "title": ".sneakers E-commerce",
+      "description": ".sneakers is an e-commerce website featuring popular sneaker brands like Airforce, Jordan, and Blazer, offering users the ability to browse and purchase products. It also includes user-friendly login and signup functionality for a seamless shopping experience.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/varunjain/sneakers-ecommerce",
+      "live": "https://sneakers-store-demo.netlify.app"
     },
     {
-      "title": "Weather Dashboard",
-      "description": "A responsive weather dashboard with location-based forecasts, interactive charts, historical data analysis, and beautiful weather animations with multi-city support.",
-      "tags": ["JavaScript", "Weather API", "Chart.js", "CSS3"],
-      "github": "https://github.com/varunjain/weather-dashboard",
-      "live": "https://weather.varunjain.dev"
-    },
-    {
-      "title": "Portfolio Website",
-      "description": "A modern, responsive portfolio website with dark/light theme toggle, smooth animations, contact form integration, and dynamic content management system.",
-      "tags": ["HTML5", "CSS3", "JavaScript", "AOS"],
-      "github": "https://github.com/varunjain/portfolio",
-      "live": "https://varunjain.dev"
-    },
-    {
-      "title": "Blog CMS",
-      "description": "A content management system for bloggers with rich text editor, media management, SEO optimization, user roles, commenting system, and social media integration.",
-      "tags": ["React", "Express", "PostgreSQL", "AWS"],
-      "github": "https://github.com/varunjain/blog-cms",
-      "live": "https://blog-cms.varunjain.dev"
-    },
-    {
-      "title": "Chat Application",
-      "description": "Real-time chat application with private messaging, group chats, file sharing, emoji support, message encryption, and online status indicators.",
-      "tags": ["Socket.io", "React", "Node.js", "Redis"],
-      "github": "https://github.com/varunjain/chat-app",
-      "live": "https://chat.varunjain.dev"
+      "title": "Instagram Clone",
+      "description": "A full-featured Instagram clone built with the MERN stack, featuring user authentication, photo uploading and sharing, real-time likes and comments, user profiles, and a responsive feed. Includes advanced features like story functionality, direct messaging, and explore page with trending posts.",
+      "tags": ["MongoDB", "Express.js", "React", "Node.js"],
+      "github": "https://github.com/varunjain/instagram-clone",
+      "live": "https://insta-clone-mern.herokuapp.com"
     }
   ],
   "social": [

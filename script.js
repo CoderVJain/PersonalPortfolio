@@ -319,10 +319,27 @@
             
             const tagsHTML = project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('');
             
+            const imageHTML = project.image ? 
+                `<img src="${project.image}" alt="${project.title}" class="project-img" loading="lazy">` :
+                `<div class="project-placeholder">
+                    <i class="fas fa-laptop-code"></i>
+                </div>`;
+            
             projectElement.innerHTML = `
                 <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-laptop-code"></i>
+                    ${imageHTML}
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <h3 class="project-overlay-title">${project.title}</h3>
+                            <div class="project-overlay-links">
+                                <a href="${project.github}" class="project-overlay-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="${project.live}" class="project-overlay-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="project-info">
