@@ -236,14 +236,22 @@ function populateContent() {
 }
 
 function populateExperience() {
-    const experienceTimeline = document.getElementById('experience-timeline');
-    experienceTimeline.innerHTML = '';
+    const experienceGrid = document.getElementById('experience-grid');
+    experienceGrid.innerHTML = '';
+    
+    const experienceIcons = {
+        'MenuCards': 'fas fa-utensils',
+        'Nexon Logistics': 'fas fa-truck',
+        'SIES Graduate School of Technology': 'fas fa-graduation-cap'
+    };
     
     portfolioData.experience.forEach((exp, index) => {
-        const experienceItem = document.createElement('div');
-        experienceItem.className = 'experience-item';
-        experienceItem.setAttribute('data-aos', 'fade-up');
-        experienceItem.setAttribute('data-aos-delay', (index * 200).toString());
+        const experienceCard = document.createElement('div');
+        experienceCard.className = 'experience-card';
+        experienceCard.setAttribute('data-aos', 'fade-up');
+        experienceCard.setAttribute('data-aos-delay', (index * 200).toString());
+        
+        const icon = experienceIcons[exp.company] || 'fas fa-briefcase';
         
         const technologiesHTML = exp.technologies.map(tech => 
             `<span class="experience-tech">${tech}</span>`
@@ -259,47 +267,36 @@ function populateExperience() {
                 View Project
             </a>` : '';
         
-        experienceItem.innerHTML = `
-            <div class="experience-content">
-                <div class="experience-header">
-                    <h3 class="experience-company">${exp.company}</h3>
-                    <h4 class="experience-role">${exp.role}</h4>
-                    <div class="experience-type-duration">
-                        <span class="experience-type">${exp.type}</span>
-                        <span class="experience-duration">${exp.duration}</span>
-                    </div>
+        experienceCard.innerHTML = `
+            <div class="experience-icon">
+                <i class="${icon}"></i>
+            </div>
+            <div class="experience-header">
+                <h3 class="experience-company">${exp.company}</h3>
+                <h4 class="experience-role">${exp.role}</h4>
+                <div class="experience-meta">
+                    <span class="experience-type">${exp.type}</span>
+                    <span class="experience-duration">${exp.duration}</span>
                 </div>
-                <p class="experience-description">${exp.description}</p>
+            </div>
+            <p class="experience-description">${exp.description}</p>
+            <div class="experience-tech-section">
+                <div class="experience-tech-title">Technologies Used</div>
                 <div class="experience-technologies">
                     ${technologiesHTML}
                 </div>
+            </div>
+            <div class="experience-achievements-section">
+                <div class="experience-achievements-title">Key Achievements</div>
                 <ul class="experience-achievements">
                     ${achievementsHTML}
                 </ul>
-                ${linkHTML}
             </div>
-            <div class="experience-dot"></div>
+            ${linkHTML}
         `;
         
-        experienceTimeline.appendChild(experienceItem);
+        experienceGrid.appendChild(experienceCard);
     });
-    
-    // Add scroll animation for experience items
-    const observerOptions = {
-        threshold: 0.3,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
-    }, observerOptions);
-    
-    const experienceItems = document.querySelectorAll('.experience-item');
-    experienceItems.forEach(item => observer.observe(item));
 }
 
 function populateSkills() {
