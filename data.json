@@ -88,21 +88,24 @@
       "description": "Edusity is a university website showcasing key information about the institution, including its programs, campus photos, student testimonials, and contact details. The site offers a user-friendly experience for prospective students and visitors to explore and connect with the university.",
       "tags": ["React", "HTML", "CSS"],
       "github": "https://github.com/varunjain/edusity",
-      "live": "https://edusity-demo.vercel.app"
+      "live": "https://edusity-demo.vercel.app",
+      "image": "/images/edusity.png"
     },
     {
       "title": ".sneakers E-commerce",
       "description": ".sneakers is an e-commerce website featuring popular sneaker brands like Airforce, Jordan, and Blazer, offering users the ability to browse and purchase products. It also includes user-friendly login and signup functionality for a seamless shopping experience.",
       "tags": ["HTML", "CSS", "JavaScript"],
       "github": "https://github.com/varunjain/sneakers-ecommerce",
-      "live": "https://sneakers-store-demo.netlify.app"
+      "live": "https://sneakers-store-demo.netlify.app",
+      "image": "/images/sneakers.png"
     },
     {
       "title": "Instagram Clone",
       "description": "A full-featured Instagram clone built with the MERN stack, featuring user authentication, photo uploading and sharing, real-time likes and comments, user profiles, and a responsive feed. Includes advanced features like story functionality, direct messaging, and explore page with trending posts.",
       "tags": ["MongoDB", "Express.js", "React", "Node.js"],
       "github": "https://github.com/varunjain/instagram-clone",
-      "live": "https://insta-clone-mern.herokuapp.com"
+      "live": "https://insta-clone-mern.herokuapp.com",
+      "image": "/images/edusity.png"
     }
   ],
   "social": [

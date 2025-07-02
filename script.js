@@ -329,17 +329,7 @@
                 <div class="project-image">
                     ${imageHTML}
                     <div class="project-overlay">
-                        <div class="project-overlay-content">
-                            <h3 class="project-overlay-title">${project.title}</h3>
-                            <div class="project-overlay-links">
-                                <a href="${project.github}" class="project-overlay-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="${project.live}" class="project-overlay-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="project-info">
