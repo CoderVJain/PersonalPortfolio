@@ -1,38 +1,16 @@
 // Global variables
 let portfolioData = {};
-let currentTheme = localStorage.getItem('theme') || 'light';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-    initializeTheme();
     initializeLoader();
     initializeNavigation();
     loadPortfolioData();
     initializeAnimations();
     initializeContactForm();
     initializeScrollEffects();
+    initializeParticles();
 });
-
-// Theme Management
-function initializeTheme() {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    updateThemeIcon();
-    
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', toggleTheme);
-}
-
-function toggleTheme() {
-    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    localStorage.setItem('theme', currentTheme);
-    updateThemeIcon();
-}
-
-function updateThemeIcon() {
-    const themeIcon = document.querySelector('#theme-toggle i');
-    themeIcon.className = currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
-}
 
 // Loader Management
 function initializeLoader() {
@@ -90,13 +68,9 @@ function initializeNavigation() {
     window.addEventListener('scroll', function() {
         const navbar = document.getElementById('navbar');
         if (window.scrollY > 50) {
-            navbar.style.background = currentTheme === 'light' 
-                ? 'rgba(255, 255, 255, 0.98)' 
-                : 'rgba(17, 24, 39, 0.98)';
+            navbar.style.background = 'rgba(15, 23, 42, 0.98)';
         } else {
-            navbar.style.background = currentTheme === 'light'
-                ? 'rgba(255, 255, 255, 0.95)'
-                : 'rgba(17, 24, 39, 0.95)';
+            navbar.style.background = 'rgba(15, 23, 42, 0.95)';
         }
     });
     
@@ -430,6 +404,24 @@ function showNotification(message, type = 'info') {
             document.body.removeChild(notification);
         }, 300);
     }, 5000);
+}
+
+// Particle Animation
+function initializeParticles() {
+    const heroSection = document.getElementById('home');
+    const particleContainer = document.createElement('div');
+    particleContainer.className = 'particles-container';
+    particleContainer.innerHTML = `
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    `;
+    heroSection.appendChild(particleContainer);
 }
 
 // Scroll Effects
