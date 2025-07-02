@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Jain - Web Developer Portfolio</title>
+    <meta name="description" content="Passionate web developer specializing in responsive and user-friendly web applications">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">VJ</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient" id="developer-name">Varun Jain</span>
+                    </h1>
+                    <p class="hero-subtitle" id="hero-subtitle">Passionate Web Developer</p>
+                    <p class="hero-description" id="hero-description">
+                        Dedicated to creating responsive and user-friendly web applications
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-container">
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                        <div class="profile-animation">
+                            <i class="fas fa-code code-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="about-description" id="about-description">
+                        <!-- Content will be loaded from JSON -->
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="stat-number" id="experience-years">2+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="stat-number" id="projects-completed">15+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="stat-number" id="technologies-used">10+</h3>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="visual-container">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="code-title">developer.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="code-keyword">const</span> 
+                                    <span class="code-variable">developer</span> = {
+                                </div>
+                                <div class="code-line code-indent">
+                                    <span class="code-property">name</span>: 
+                                    <span class="code-string">'Varun Jain'</span>,
+                                </div>
+                                <div class="code-line code-indent">
+                                    <span class="code-property">passion</span>: 
+                                    <span class="code-string">'Web Development'</span>,
+                                </div>
+                                <div class="code-line code-indent">
+                                    <span class="code-property">code</span>: 
+                                    <span class="code-function">() => 'Clean & Efficient'</span>
+                                </div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools I work with</p>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-text">
+                        <h3>Let's discuss your project</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hello, feel free to reach out!</p>
+                    </div>
+                    <div class="contact-methods" id="contact-methods">
+                        <!-- Contact methods will be loaded from JSON -->
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Varun Jain. All rights reserved.</p>
+                </div>
+                <div class="social-links" id="social-links">
+                    <!-- Social links will be loaded from JSON -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+  "personal": {
+    "name": "Varun Jain",
+    "title": "Passionate Web Developer",
+    "description": "Dedicated to creating responsive and user-friendly web applications",
+    "about": "I am a passionate web developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems. My goal is to write clean, efficient code and deliver exceptional user experiences. With a strong foundation in frontend and backend development, I continuously learn and adapt to new technologies to stay current with industry trends.",
+    "email": "varun.jain@example.com",
+    "phone": "+91 12345 67890",
+    "location": "India"
+  },
+  "stats": {
+    "experience": "2+",
+    "projects": "15+",
+    "technologies": "10+"
+  },
+  "skills": [
+    {
+      "name": "HTML5",
+      "icon": "fab fa-html5",
+      "level": "Expert"
+    },
+    {
+      "name": "CSS3",
+      "icon": "fab fa-css3-alt",
+      "level": "Expert"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "fab fa-js-square",
+      "level": "Advanced"
+    },
+    {
+      "name": "React",
+      "icon": "fab fa-react",
+      "level": "Advanced"
+    },
+    {
+      "name": "Node.js",
+      "icon": "fab fa-node-js",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Git",
+      "icon": "fab fa-git-alt",
+      "level": "Advanced"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "fas fa-database",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Python",
+      "icon": "fab fa-python",
+      "level": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with modern UI/UX, payment integration, user authentication, shopping cart functionality, and comprehensive admin dashboard for managing products and orders.",
+      "tags": ["React", "Node.js", "MongoDB", "Stripe"],
+      "github": "https://github.com/varunjain/ecommerce-platform",
+      "live": "https://ecommerce-demo.varunjain.dev"
+    },
+    {
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates, team collaboration features, project tracking, deadline management, and intuitive drag-and-drop interface.",
+      "tags": ["Vue.js", "Express", "Socket.io", "MySQL"],
+      "github": "https://github.com/varunjain/task-manager",
+      "live": "https://taskmanager.varunjain.dev"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "A responsive weather dashboard with location-based forecasts, interactive charts, historical data analysis, and beautiful weather animations with multi-city support.",
+      "tags": ["JavaScript", "Weather API", "Chart.js", "CSS3"],
+      "github": "https://github.com/varunjain/weather-dashboard",
+      "live": "https://weather.varunjain.dev"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "A modern, responsive portfolio website with dark/light theme toggle, smooth animations, contact form integration, and dynamic content management system.",
+      "tags": ["HTML5", "CSS3", "JavaScript", "AOS"],
+      "github": "https://github.com/varunjain/portfolio",
+      "live": "https://varunjain.dev"
+    },
+    {
+      "title": "Blog CMS",
+      "description": "A content management system for bloggers with rich text editor, media management, SEO optimization, user roles, commenting system, and social media integration.",
+      "tags": ["React", "Express", "PostgreSQL", "AWS"],
+      "github": "https://github.com/varunjain/blog-cms",
+      "live": "https://blog-cms.varunjain.dev"
+    },
+    {
+      "title": "Chat Application",
+      "description": "Real-time chat application with private messaging, group chats, file sharing, emoji support, message encryption, and online status indicators.",
+      "tags": ["Socket.io", "React", "Node.js", "Redis"],
+      "github": "https://github.com/varunjain/chat-app",
+      "live": "https://chat.varunjain.dev"
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "icon": "fab fa-github",
+      "url": "https://github.com/varunjain"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin",
+      "url": "https://linkedin.com/in/varunjain"
+    },
+    {
+      "name": "Twitter",
+      "icon": "fab fa-twitter",
+      "url": "https://twitter.com/varunjain"
+    },
+    {
+      "name": "Instagram",
+      "icon": "fab fa-instagram",
+      "url": "https://instagram.com/varunjain"
+    },
+    {
+      "name": "Email",
+      "icon": "fas fa-envelope",
+      "url": "mailto:varun.jain@example.com"
+    }
+  ],
+  "contact": {
+    "form_action": "https://formspree.io/f/your-form-id",
+    "success_message": "Thank you for your message! I'll get back to you soon.",
+    "error_message": "Sorry, there was an error sending your message. Please try again."
+  }
+}
