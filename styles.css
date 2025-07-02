@@ -667,7 +667,7 @@ section {
 
 .experience-item {
   position: relative;
-  margin: 3rem 0;
+  margin: 2rem 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -681,26 +681,27 @@ section {
 .experience-item:nth-child(odd) .experience-content {
   margin-left: 0;
   margin-right: 50%;
-  padding-right: 3rem;
+  padding-right: 2rem;
   text-align: right;
 }
 
 .experience-item:nth-child(even) .experience-content {
   margin-left: 50%;
   margin-right: 0;
-  padding-left: 3rem;
+  padding-left: 2rem;
   text-align: left;
 }
 
 .experience-content {
   background: var(--gradient-card);
-  padding: 2.5rem;
-  border-radius: 20px;
+  padding: 1.5rem;
+  border-radius: 15px;
   border: 1px solid var(--border-color);
   position: relative;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
+  max-width: 400px;
 }
 
 .experience-content::before {
@@ -727,11 +728,11 @@ section {
 .experience-dot {
   position: absolute;
   left: 50%;
-  top: 2rem;
-  width: 20px;
-  height: 20px;
+  top: 1.5rem;
+  width: 16px;
+  height: 16px;
   background: var(--gradient-primary);
-  border: 4px solid var(--bg-primary);
+  border: 3px solid var(--bg-primary);
   border-radius: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -745,68 +746,69 @@ section {
 }
 
 .experience-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .experience-company {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .experience-role {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .experience-type-duration {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
   flex-wrap: wrap;
 }
 
 .experience-type {
   background: var(--gradient-accent);
   color: white;
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
 .experience-duration {
   color: var(--text-secondary);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .experience-description {
   color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .experience-technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .experience-tech {
   background: var(--bg-tertiary);
   color: var(--text-primary);
-  padding: 0.4rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
   font-weight: 500;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
@@ -820,15 +822,16 @@ section {
 
 .experience-achievements {
   list-style: none;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .experience-achievements li {
   position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  margin-bottom: 0.3rem;
   color: var(--text-secondary);
-  line-height: 1.5;
+  line-height: 1.4;
+  font-size: 0.85rem;
 }
 
 .experience-achievements li::before {
@@ -836,18 +839,19 @@ section {
   position: absolute;
   left: 0;
   color: var(--primary-color);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .experience-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
 }
 
 .experience-link:hover {
@@ -1329,11 +1333,12 @@ section {
   
   .experience-item:nth-child(odd) .experience-content,
   .experience-item:nth-child(even) .experience-content {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: 0;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-right: 1rem;
     text-align: left;
+    max-width: 300px;
   }
   
   .experience-dot {
